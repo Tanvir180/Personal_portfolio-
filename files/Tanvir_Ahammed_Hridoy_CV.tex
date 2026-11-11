@@ -1,0 +1,109 @@
+% Public-facing CV for Md Tanvir Ahammed Hridoy
+% Compiles with XeLaTeX. Source content adapted from the CV and LaTeX supplied by the owner.
+% Sensitive identification data (passport, date of birth, street address) deliberately omitted.
+\documentclass[a4paper,10pt]{article}
+\usepackage[top=0.63in,bottom=0.59in,left=0.71in,right=0.71in]{geometry}
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{multicol}
+\definecolor{navy}{HTML}{162C30}
+\definecolor{green}{HTML}{16765F}
+\definecolor{linecolor}{HTML}{D6E3DC}
+\definecolor{textgray}{HTML}{52615E}
+\hypersetup{colorlinks=true,urlcolor=green,linkcolor=green}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlist[itemize]{leftmargin=1.18em,itemsep=2.1pt,topsep=2.5pt,parsep=0pt}
+\titlespacing*{\section}{0pt}{15pt}{7pt}
+\titleformat{\section}{\bfseries\large\color{navy}}{}{0pt}{}[\vspace{3pt}\color{linecolor}\titlerule]
+\newcommand{\metatxt}[1]{{\small\color{textgray}#1}}
+\newcommand{\position}[3]{\textbf{\color{navy}#1}\hfill{\small\color{green}\textbf{#3}}\\[-2pt]\metatxt{#2}\\[-1pt]}
+\newcommand{\project}[3]{\textbf{\color{navy}#1} \metatxt{\,|\, #2}\\[-1pt]{\small #3}\par\vspace{4pt}}
+\begin{document}
+
+{\fontsize{24}{28}\selectfont\bfseries\color{navy} MD TANVIR AHAMMED HRIDOY}\par
+{\color{green}\large Application Software Developer (iOS) \textbar{} AI/ML Researcher}\par
+\vspace{2pt}
+{\small Dhaka, Bangladesh \quad \textbar{} \quad +880 1575 249992 \quad \textbar{} \quad \href{mailto:tanvir.ahammed.cse@gmail.com}{tanvir.ahammed.cse@gmail.com}}\par
+{\small \href{https://github.com/Tanvir180}{github.com/Tanvir180} \quad \textbar{} \quad \href{https://www.linkedin.com/in/tanvir-ahammed-hridoy/}{linkedin.com/in/tanvir-ahammed-hridoy}}\par
+\vspace{7pt}
+{\color{green}\rule{\linewidth}{2pt}}
+
+\section{PROFESSIONAL PROFILE}
+\small
+Application software developer working on a large-scale iOS job platform and an applied machine learning researcher with a first-author Springer Nature publication. Experience spans Swift/SwiftUI, UIKit, secure REST API integration, local storage, natural language processing, ensemble learning and product-focused software delivery.
+
+\section{PROFESSIONAL EXPERIENCE}
+\position{Application Software Developer (iOS)}{Bdjobs.com Limited \textbar{} Dhaka, Bangladesh}{Aug 2024 -- Present}
+\begin{itemize}
+\item Develop and maintain the Bdjobs iOS application using Swift, SwiftUI, UIKit and Storyboard, with attention to performance, reliability and usability.
+\item Implement job listing and job detail experiences, employer messaging, job-fair enhancements, Early Access features, and account plans / pricing / upgrade flows.
+\item Integrate REST APIs with JWT-based authentication and secure local data handling with SQLite; contribute to input validation and protection of user information.
+\item Work with designers and backend engineers on delivery, debugging and production issue resolution.
+\end{itemize}
+\vspace{3pt}
+\position{Python with Machine Learning Trainee}{Jagannath University (CSE) and EDGE}{Mar 2024 -- Feb 2025}
+\begin{itemize}
+\item Developed and evaluated Python machine learning workflows including preprocessing, training and classification using TensorFlow and Scikit-learn.
+\end{itemize}
+\vspace{1pt}
+\position{Cloud Computing Trainee}{Prime Tech Solutions Ltd. and IIT, University of Dhaka}{Sep 2023 -- Dec 2023}
+\begin{itemize}
+\item Practiced CI/CD pipelines and application deployment with Docker and Kubernetes.
+\end{itemize}
+
+\section{RESEARCH PUBLICATION}
+\textbf{\color{navy}First author \textbar{} Social Network Analysis and Mining (Springer Nature), 2024}\\
+{\small \href{https://doi.org/10.1007/s13278-024-01392-w}{Leveraging Web Scraping and Stacking Ensemble Machine Learning Techniques to Enhance Detection of Major Depressive Disorder from Social Media Posts}}\\[-1pt]
+Collected and processed 45,000+ social media posts through a Reddit/PRAW NLP pipeline; trained and evaluated stacking ensemble models, reporting 96.47\% classification accuracy on the study dataset.\\[-1pt]
+\textbf{Keywords:} NLP, web scraping, stacking ensemble, Scikit-learn, TensorFlow, hyperparameter optimization.
+
+\section{SELECTED PROJECTS}
+\project{Bdjobs iOS Application}{Swift, UIKit, SwiftUI, REST APIs, Firebase}{Production iOS job platform with contributions to job discovery, authentication and subscription flows. \href{https://apps.apple.com/in/app/bdjobs/id1435728822}{View on App Store}.}
+\project{Counterfeit Banknote Detection}{Python, OpenCV, NumPy}{Digital image processing techniques for security-feature extraction and counterfeit detection. \href{https://github.com/Tanvir180/Fake_Note_Detection_of_Bangladesh}{GitHub repository}.}
+
+\newpage
+{\color{green}\rule{\linewidth}{2pt}}\vspace{9pt}
+{\bfseries\large\color{navy} MD TANVIR AHAMMED HRIDOY}\hfill{\small\color{textgray}CV / 02}
+
+\section{ADDITIONAL PROJECTS}
+\project{IoT-Based Intelligent Health Monitoring}{Arduino UNO, ESP8266, AD8232, sensors}{Prototype for remote monitoring of physiological signals including ECG, pulse and temperature. \href{https://github.com/Tanvir180/IOT_Based_Health_Monitoring_System}{GitHub repository}.}
+\project{Jagannath University Canteen App \& Web Platform}{Flutter, Firebase, PHP, MySQL}{Food ordering ecosystem using QR-based tracking and bKash payment integration. \href{https://github.com/Tanvir180/Jagannath_University_Canteen}{Mobile app} \textbar{} \href{https://github.com/Tanvir180/Canteen-Automation-System}{Web platform}.}
+
+\section{EDUCATION}
+\position{M.Sc. in Computer Science}{Jagannath University}{2024 -- 2026 (expected)}
+\vspace{3pt}
+\position{B.Sc. in Computer Science \& Engineering}{Jagannath University \textbar{} CGPA: 3.59 / 4.00}{2019 -- 2024}
+\vspace{3pt}
+\position{Higher Secondary Certificate, Science}{Holy Land College, Dinajpur \textbar{} GPA: 4.92 / 5.00}{2016 -- 2018}
+
+\section{TECHNICAL SKILLS}
+\begin{tabularx}{\linewidth}{@{}p{0.23\linewidth}X@{}}
+\textbf{\color{navy}iOS / Mobile} & Swift, SwiftUI, UIKit, Flutter, Dart, CocoaPods, REST API integration, SQLite, Firebase\\[5pt]
+\textbf{\color{navy}AI / Data Science} & Python, NLP, deep learning, ensemble learning, Transformers, TensorFlow, Scikit-learn, OpenCV, SHAP\\[5pt]
+\textbf{\color{navy}Engineering} & Git, GitHub, Docker, Kubernetes, CI/CD, secure API design, JWT authentication, SQL\\[5pt]
+\textbf{\color{navy}Programming} & Python, Swift, C++, C\#, Java, HTML, CSS, JavaScript, PHP\\
+\end{tabularx}
+
+\section{HONOURS \& ACTIVITIES}
+\begin{itemize}
+\item University Merit Scholarship, Jagannath University.
+\item Third place, JnU Project Showcasing Competition (2022 and 2023), Team Fixit.
+\item Top 10 finalist, Orange Corners BD Ideation Challenge 3.0, Team AgriVillage.
+\item Second runner-up, JNU Power Presenter 2023.
+\item Departmental Representative, Jagannath University Debating Society (2021--2024).
+\item Technical content creator of ``TechBD For You'', covering software systems, AI/ML and computing fundamentals.
+\end{itemize}
+
+\vfill
+{\color{linecolor}\rule{\linewidth}{0.6pt}}\\[-1pt]
+{\small\color{textgray}Portfolio resume  |  Dhaka, Bangladesh  |  github.com/Tanvir180}
+\end{document}
