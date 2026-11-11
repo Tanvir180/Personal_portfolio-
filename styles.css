@@ -74,8 +74,9 @@ html[data-theme="light"] .ambient{opacity:.14}
 .sidebar-footnote{margin:16px auto 0;text-align:center;max-width:200px;font-size:10px;color:var(--muted);line-height:1.6}
 
 /* Main shell / tabs */
-.content-card{overflow:hidden;min-height:1040px;display:flex;flex-direction:column}
-.topbar{height:84px;padding:0 37px;display:flex;align-items:center;border-bottom:1px solid var(--line);gap:20px;flex-shrink:0}
+.content-card{overflow:visible;min-height:1040px;display:flex;flex-direction:column;border-radius:var(--radius)}
+.topbar{position:sticky;top:0;z-index:15;height:84px;padding:0 37px;display:flex;align-items:center;border:1px solid rgba(124,156,145,.18);border-bottom:1px solid rgba(124,156,145,.18);border-radius:var(--radius) var(--radius) 0 0;gap:20px;flex-shrink:0;background:rgba(22,31,40,.58);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(255,255,255,.02);margin:0}
+html[data-theme="light"] .topbar{background:rgba(255,255,255,.54)}
 .topbar-label{color:var(--muted);display:flex;align-items:center;gap:8px;font-size:9px;font-weight:800;letter-spacing:1.5px;white-space:nowrap;flex:1}
 .topbar-indicator{height:7px;width:7px;border:1.5px solid var(--accent);border-radius:50%}
 .tab-nav{display:flex;align-self:stretch;gap:7px;align-items:stretch}
